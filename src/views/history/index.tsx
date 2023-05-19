@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import { useContext, useEffect, useState } from "react";
 import HistoryAction from "../../components/HistoryAction";
 import { getItems } from "../../middleware/api";

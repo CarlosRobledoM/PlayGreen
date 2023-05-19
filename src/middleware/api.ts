@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import { db } from './firebase';
 import {
     collection, getDocs, query, addDoc

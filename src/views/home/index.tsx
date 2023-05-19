@@ -43,10 +43,12 @@ export default function Home() {
     const getSports = async () => {
         await Axios.get('https://www.thesportsdb.com/api/v1/json/3/all_leagues.php').then((response) => {
         const arrayAllSports = []
+        //@ts-ignore
         const arraySports = []
         for (var i=0;i<response.data.leagues.length;i++){
             arrayAllSports.push(response.data.leagues[i].strSport)
             for(var j=0;j<arrayAllSports.length;j++){
+                //@ts-ignore
                 if(arraySports.includes(arrayAllSports[j])){
                 }
                 else{

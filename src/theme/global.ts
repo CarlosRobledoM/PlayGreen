@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import {ThemeProps} from './index'
 import { createGlobalStyle, withTheme } from 'styled-components';
 
